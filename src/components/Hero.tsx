@@ -5,7 +5,7 @@ import { MapPin, Calendar, Clock, ExternalLink } from 'lucide-react'
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black pt-32">
       {/* Background Effects */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl animate-pulse" />
@@ -48,7 +48,7 @@ export default function Hero() {
           <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black mb-6 leading-tight">
             <span className="block text-gray-400 font-light">Dive Movement</span>
             <span className="block bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-              Conf'26
+              {"Conf'26"}
             </span>
           </h1>
 
@@ -59,21 +59,21 @@ export default function Hero() {
 
           {/* Description */}
           <p className="text-lg text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed">
-            Uma conferência focada em compartilhar experiências e avanços no desenvolvimento espiritual 
+            Uma conferência focada em compartilhar experiências e avanços no desenvolvimento espiritual
             da juventude, com as mentes mais brilhantes da nossa comunidade.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-6 text-lg font-semibold shadow-lg shadow-purple-500/50"
             >
               Inscrever-se
               <ExternalLink className="ml-2 w-5 h-5" />
             </Button>
-            <Button 
-              variant="outline" 
+            <Button
+              variant="outline"
               size="lg"
               className="border-white/20 bg-white/5 backdrop-blur-sm hover:bg-white/10 px-8 py-6 text-lg font-semibold"
             >
@@ -113,9 +113,9 @@ export default function Hero() {
               <div className="absolute inset-0 bg-gradient-to-br from-pink-500/0 to-pink-500/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="relative z-10">
                 <p className="text-sm text-gray-400 mb-2">Links</p>
-                <a 
-                  href="https://linktr.ee/pibvcd25" 
-                  target="_blank" 
+                <a
+                  href="https://linktr.ee/pibvcd25"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-purple-400 hover:text-purple-300 transition-colors flex items-center gap-2"
                 >
