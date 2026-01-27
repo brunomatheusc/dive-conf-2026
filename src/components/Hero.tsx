@@ -32,19 +32,37 @@ export default function Hero() {
             </span>
           </h1>
 
+          {/* Date Section - Estilo da primeira imagem */}
+          <div className="flex items-center justify-center gap-4 mb-6">
+            <div className="flex items-baseline gap-1">
+              <span className="text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] font-bold text-yellow-400 leading-none" style={{ fontFamily: 'var(--font-fredoka), sans-serif' }}>
+                13
+              </span>
+              <span className="text-2xl sm:text-3xl md:text-4xl font-bold text-yellow-400 self-end pb-3 sm:pb-4" style={{ fontFamily: 'var(--font-fredoka), sans-serif' }}>
+                à
+              </span>
+              <span className="text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] font-bold text-yellow-400 leading-none" style={{ fontFamily: 'var(--font-fredoka), sans-serif' }}>
+                16
+              </span>
+            </div>
+            <div className="flex flex-col text-left justify-center">
+              <span className="text-base sm:text-lg md:text-xl font-bold text-gray-200/90 leading-tight">DE</span>
+              <span className="text-base sm:text-lg md:text-xl font-bold text-gray-200/90 leading-tight">FEVEREIRO</span>
+            </div>
+          </div>
+
           {/* Tagline */}
           <p className="text-xl sm:text-2xl text-gray-300 mb-4 font-light italic">
             Até que todos mergulhem mais fundo.
           </p>
 
           {/* Description */}
-          <p className="text-lg text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed">
-            Uma conferência focada em compartilhar experiências e avanços no desenvolvimento espiritual
-            da juventude, com as mentes mais brilhantes da nossa comunidade.
-          </p>
+          <span className="block mt-3 text-xl text-white/90 font-medium">
+            Venham ser cobertos pela glória de Deus.
+          </span>
 
           {/* Inscrições Section - Texto destacado */}
-          <div className="mb-8 sm:mb-16">
+          <div className="my-8 sm:mb-16">
             <p className="text-4xl sm:text-5xl md:text-6xl font-bold text-white/90 mb-3 tracking-tight">
               INSCRIÇÕES
             </p>
