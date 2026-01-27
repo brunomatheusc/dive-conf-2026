@@ -83,34 +83,36 @@ export default function Speakers() {
           {speakers.map((speaker, index) => (
             <Card
               key={index}
-              className="group relative overflow-hidden bg-black/60 border border-white/10 hover:border-white/30 transition-all duration-300 rounded-2xl"
+              className="group relative overflow-hidden bg-black/60 border border-white/10 hover:border-white/30 transition-all duration-500 ease-out rounded-2xl hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20 cursor-pointer"
             >
+              {/* Glow Effect on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-500/0 via-purple-500/0 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl -z-10" />
+
               {/* Image Section */}
-              <div className="relative w-full aspect-square overflow-hidden bg-gradient-to-br from-purple-500/20 to-blue-500/20">
+              <div className="relative w-full aspect-square overflow-hidden bg-gradient-to-br from-purple-500/20 to-blue-500/20 rounded-t-2xl">
                 <Image
-                  // src="https://plus.unsplash.com/premium_photo-1682855223699-edb85ffa57b3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   src={speaker.image}
                   alt={speaker.name}
                   fill
-                  className="object-cover rounded-t-2xl"
+                  className="object-cover rounded-t-2xl transition-transform duration-700 ease-out group-hover:scale-110"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent group-hover:from-black/40 transition-all duration-500" />
               </div>
 
-              <CardContent className="p-6 space-y-3">
+              <CardContent className="p-6 space-y-3 relative z-10">
                 {/* Name */}
-                <h3 className="text-2xl font-bold text-white leading-tight">
+                <h3 className="text-2xl font-bold text-white leading-tight group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-cyan-400 group-hover:bg-clip-text transition-all duration-500">
                   {speaker.name}
                 </h3>
 
                 {/* Confirmed Label */}
-                <p className="bg-yellow-400 px-2 py-1 rounded-full w-fit text-sm text-black font-normal">
+                <p className="bg-yellow-400 px-2 py-1 rounded-full w-fit text-sm text-black font-normal group-hover:bg-yellow-300 group-hover:scale-105 transition-all duration-300">
                   Presença Confirmada
                 </p>
 
                 {/* Description */}
-                <p className="text-sm text-gray-300 leading-relaxed">
+                <p className="text-sm text-gray-300 leading-relaxed group-hover:text-gray-200 transition-colors duration-300">
                   {speaker.role}
                 </p>
 
@@ -119,10 +121,10 @@ export default function Speakers() {
                   {speaker.tags.map((tag, tagIndex) => (
                     <span
                       key={tagIndex}
-                      className="text-xs text-white/90 flex items-center gap-1.5"
+                      className="text-xs text-white/90 flex items-center gap-1.5 group-hover:text-white transition-colors duration-300"
                     >
                       {tagIndex > 0 && (
-                        <span className="w-1.5 h-1.5 rounded-full bg-yellow-400" />
+                        <span className="w-1.5 h-1.5 rounded-full bg-yellow-400 group-hover:bg-yellow-300 transition-colors duration-300" />
                       )}
                       {tag}
                     </span>

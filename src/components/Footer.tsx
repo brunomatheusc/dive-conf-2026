@@ -48,7 +48,7 @@ export default function Footer() {
             </h4>
             <p className="text-sm text-gray-400">Av. Chiquinho Antunes, 400</p>
             <a
-              href="https://maps.google.com/?q=Av.+Chiquinho+Antunes,+400,+Paranapanema+SP"
+              href="https://maps.app.goo.gl/f6KuhufgXAwA8euHA?g_st=ic"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block text-xs text-white border border-white/20 hover:border-white/40 px-3 py-1.5 rounded transition-colors"

@@ -1,11 +1,12 @@
-'use client'
+'use client';
 
-import { Button } from '@/components/ui/button'
-import { MapPin, Calendar, ExternalLink } from 'lucide-react'
+import { Button } from '@/components/ui/button';
+import { MapPin, Calendar, ExternalLink } from 'lucide-react';
 
 export default function Hero() {
-  const whatsappLink = 'https://api.whatsapp.com/send/?phone=5514997735931&text=Ol%C3%A1%21+Quero+me+inscrever+na+Dive+Movement+Conf%E2%80%9926.&type=phone_number&app_absent=0'
-  const googleMapsLink = 'https://maps.google.com/?q=Av.+Chiquinho+Antunes,+400,+Paranapanema+SP'
+  const whatsappLink = "https://api.whatsapp.com/send/?phone=5514997735931&text=Ol%C3%A1%21+Quero+me+inscrever+na+Dive+Movement+Conf%E2%80%9926.&type=phone_number&app_absent=0";
+  // const googleMapsLink = "https://maps.google.com/?q=Av.+Chiquinho+Antunes,+400,+Paranapanema+SP";
+  const googleMapsLink = "https://maps.app.goo.gl/f6KuhufgXAwA8euHA?g_st=ic";
 
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-32">

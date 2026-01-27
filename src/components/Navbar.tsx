@@ -1,12 +1,13 @@
-'use client'
+'use client';
 
-import Image from 'next/image'
-import Link from 'next/link'
-import { Button } from '@/components/ui/button'
-import { MapPin, ArrowRight, ExternalLink } from 'lucide-react'
+import Image from 'next/image';
+import Link from 'next/link';
+import { Button } from '@/components/ui/button';
+import { MapPin, ExternalLink } from 'lucide-react';
 
 export default function Navbar() {
-  const googleMapsLink = 'https://maps.google.com/?q=Paranapanema+SP' // Placeholder - você vai atualizar depois
+  // const googleMapsLink = 'https://maps.google.com/?q=Paranapanema+SP' // Placeholder - você vai atualizar depois
+  const googleMapsLink = "https://maps.app.goo.gl/f6KuhufgXAwA8euHA?g_st=ic";
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
