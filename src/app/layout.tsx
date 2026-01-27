@@ -17,6 +17,25 @@ export const metadata: Metadata = {
       { url: '/icon.ico' },
     ],
   },
+  openGraph: {
+    title: 'Dive Movement Conf\'26 | Juventude DIVE',
+    description: 'Conferência da Juventude DIVE - PIB Vida com Deus. Até que todos mergulhem mais fundo.',
+    images: [
+      {
+        url: '/images/capa.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Dive Movement Conf\'26',
+      },
+    ],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Dive Movement Conf\'26 | Juventude DIVE',
+    description: 'Conferência da Juventude DIVE - PIB Vida com Deus. Até que todos mergulhem mais fundo.',
+    images: ['/images/capa.jpg'],
+  },
 }
 
 export default function RootLayout({
