@@ -12,8 +12,8 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
       {/* Top Bar - Date and Location */}
       <div className="border-b border-white/10">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between py-2">
+        <div className="container mx-auto p-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between">
             <p className="text-sm text-white/80">
               13-16 de Fevereiro de 2026 / Paranapanema, SP
             </p>
@@ -71,7 +71,7 @@ export default function Navbar() {
 
             <Button
               variant="outline"
-              className="border-white/20 bg-transparent hover:bg-white/10 text-white"
+              className="hidden sm:block border-white/20 bg-transparent hover:bg-white/10 text-white"
               asChild
             >
               <a
