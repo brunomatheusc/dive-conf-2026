@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
-import { MapPin, ArrowRight } from 'lucide-react'
+import { MapPin, ArrowRight, ExternalLink } from 'lucide-react'
 
 export default function Navbar() {
   const googleMapsLink = 'https://maps.google.com/?q=Paranapanema+SP' // Placeholder - você vai atualizar depois
@@ -55,7 +55,8 @@ export default function Navbar() {
           {/* CTA Buttons - Right */}
           <div className="flex items-center gap-3">
             <Button
-              className="bg-[#352A86] hover:bg-[#352A86]/80 font-semibold"
+              className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white text-lg font-semibold shadow-lg shadow-purple-500/50"
+              // className="bg-[#352A86] hover:bg-[#352A86]/80 font-semibold"
               asChild
             >
               <a
@@ -64,7 +65,7 @@ export default function Navbar() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-white font-semibold"
               >
-                Inscreva-se <ArrowRight className="w-4 h-4" />
+                Inscreva-se <ExternalLink className="w-4 h-4" />
               </a>
             </Button>
 

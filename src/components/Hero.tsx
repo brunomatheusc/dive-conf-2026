@@ -1,39 +1,19 @@
 'use client'
 
 import { Button } from '@/components/ui/button'
-import { MapPin, Calendar, Clock, ExternalLink } from 'lucide-react'
+import { MapPin, Calendar, ExternalLink } from 'lucide-react'
 
 export default function Hero() {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black pt-32">
-      {/* Background Effects */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-purple-500/10 via-blue-500/10 to-purple-500/10 rounded-full blur-3xl" />
-      </div>
+  const whatsappLink = 'https://api.whatsapp.com/send/?phone=5514997735931&text=Ol%C3%A1%21+Quero+me+inscrever+na+Dive+Movement+Conf%E2%80%9926.&type=phone_number&app_absent=0'
+  const googleMapsLink = 'https://maps.google.com/?q=Av.+Chiquinho+Antunes,+400,+Paranapanema+SP'
 
-      {/* Grid Pattern */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]" />
+  return (
+    <section className="relative min-h-screen flex items-center justify-center pt-32">
 
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="max-w-5xl mx-auto text-center">
-          {/* Logo Section */}
-          <div className="mb-12 flex justify-center hidden">
-            <div className="relative w-32 h-32 flex items-center justify-center">
-              {/* Hexagonal Logo */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="relative w-24 h-24">
-                  <div className="absolute inset-0 bg-gradient-to-br from-cyan-400 via-purple-500 to-pink-500 rounded-lg rotate-45 opacity-80 blur-sm" />
-                  <div className="absolute inset-0 bg-gradient-to-br from-cyan-400 via-purple-500 to-pink-500 rounded-lg rotate-45" />
-                </div>
-              </div>
-              <span className="relative z-10 text-4xl font-bold text-white">DIVE</span>
-            </div>
-          </div>
-
           {/* Date and Location Badge */}
-          <div className="flex flex-wrap items-center justify-center gap-4 mb-8">
+          <div className="hidden flex-wrap items-center justify-center gap-4 mb-8">
             <div className="flex items-center gap-2 px-4 py-2 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full text-sm">
               <Calendar className="w-4 h-4 text-purple-400" />
               <span className="text-gray-300">2026</span>
@@ -63,36 +43,50 @@ export default function Hero() {
             da juventude, com as mentes mais brilhantes da nossa comunidade.
           </p>
 
+          {/* Inscrições Section - Texto destacado */}
+          <div className="mb-16">
+            <p className="text-4xl sm:text-5xl md:text-6xl font-bold text-white/90 mb-3 tracking-tight">
+              INSCRIÇÕES
+            </p>
+            <p className="text-6xl sm:text-7xl md:text-8xl font-black text-yellow-400 tracking-tight">
+              R$ 30
+            </p>
+          </div>
+
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button
               size="lg"
               className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-6 text-lg font-semibold shadow-lg shadow-purple-500/50"
+              asChild
             >
-              Inscrever-se
-              <ExternalLink className="ml-2 w-5 h-5" />
+              <a
+                href={whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-white font-semibold"
+              >
+                Inscrever-se
+                <ExternalLink className="w-5 h-5" />
+              </a>
             </Button>
+
             <Button
               variant="outline"
               size="lg"
               className="border-white/20 bg-white/5 backdrop-blur-sm hover:bg-white/10 px-8 py-6 text-lg font-semibold"
+              asChild
             >
-              <MapPin className="mr-2 w-5 h-5" />
-              Como Chegar
+              <a
+                href={googleMapsLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-white font-semibold"
+              >
+                <MapPin className="w-5 h-5" />
+                Como Chegar
+              </a>
             </Button>
-          </div>
-
-          {/* Info Cards */}
-          <div className="flex items-center justify-center">
-            {/* Price Card */}
-            <div className="group relative p-6 bg-gradient-to-br from-white/5 to-white/0 backdrop-blur-sm border border-white/10 rounded-2xl hover:border-purple-500/50 transition-all duration-300">
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-500/0 to-purple-500/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              <div className="relative z-10">
-                <p className="text-sm text-gray-400 mb-2">Investimento</p>
-                <p className="text-3xl font-bold text-yellow-400">R$ 30</p>
-                <p className="text-xs text-gray-500 mt-1">Inscrições abertas</p>
-              </div>
-            </div>
           </div>
         </div>
       </div>
