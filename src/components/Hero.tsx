@@ -19,7 +19,7 @@ export default function Hero() {
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="max-w-5xl mx-auto text-center">
           {/* Logo Section */}
-          <div className="mb-12 flex justify-center">
+          <div className="mb-12 flex justify-center hidden">
             <div className="relative w-32 h-32 flex items-center justify-center">
               {/* Hexagonal Logo */}
               <div className="absolute inset-0 flex items-center justify-center">
@@ -40,7 +40,7 @@ export default function Hero() {
             </div>
             <div className="flex items-center gap-2 px-4 py-2 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full text-sm">
               <MapPin className="w-4 h-4 text-purple-400" />
-              <span className="text-gray-300">Av. Chiquinho Antunes</span>
+              <span className="text-gray-300">Av. Chiquinho Antunes, 400</span>
             </div>
           </div>
 
@@ -83,7 +83,7 @@ export default function Hero() {
           </div>
 
           {/* Info Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div className="flex items-center justify-center">
             {/* Price Card */}
             <div className="group relative p-6 bg-gradient-to-br from-white/5 to-white/0 backdrop-blur-sm border border-white/10 rounded-2xl hover:border-purple-500/50 transition-all duration-300">
               <div className="absolute inset-0 bg-gradient-to-br from-purple-500/0 to-purple-500/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -91,37 +91,6 @@ export default function Hero() {
                 <p className="text-sm text-gray-400 mb-2">Investimento</p>
                 <p className="text-3xl font-bold text-yellow-400">R$ 30</p>
                 <p className="text-xs text-gray-500 mt-1">Inscrições abertas</p>
-              </div>
-            </div>
-
-            {/* Schedule Card */}
-            <div className="group relative p-6 bg-gradient-to-br from-white/5 to-white/0 backdrop-blur-sm border border-white/10 rounded-2xl hover:border-blue-500/50 transition-all duration-300">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-blue-500/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              <div className="relative z-10">
-                <p className="text-sm text-gray-400 mb-2 flex items-center gap-2">
-                  <Clock className="w-4 h-4" />
-                  Horários
-                </p>
-                <p className="text-sm text-gray-300">Sexta: 20h</p>
-                <p className="text-sm text-gray-300">Domingo: 19h30</p>
-                <p className="text-sm text-gray-300">Sábado DIVE: 20h</p>
-              </div>
-            </div>
-
-            {/* Link Card */}
-            <div className="group relative p-6 bg-gradient-to-br from-white/5 to-white/0 backdrop-blur-sm border border-white/10 rounded-2xl hover:border-pink-500/50 transition-all duration-300">
-              <div className="absolute inset-0 bg-gradient-to-br from-pink-500/0 to-pink-500/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              <div className="relative z-10">
-                <p className="text-sm text-gray-400 mb-2">Links</p>
-                <a
-                  href="https://linktr.ee/pibvcd25"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-purple-400 hover:text-purple-300 transition-colors flex items-center gap-2"
-                >
-                  linktr.ee/pibvcd25
-                  <ExternalLink className="w-3 h-3" />
-                </a>
               </div>
             </div>
           </div>
