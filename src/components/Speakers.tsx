@@ -1,7 +1,7 @@
-'use client'
+'use client';
 
-import { Card, CardContent } from '@/components/ui/card'
-import Image from 'next/image'
+import { Card, CardContent } from '@/components/ui/card';
+import Image from 'next/image';
 
 const speakers = [
   {
@@ -52,7 +52,7 @@ const speakers = [
     category: 'speaker',
     tags: ['PALESTRA', 'LOUVOR']
   }
-]
+];
 
 export default function Speakers() {
   return (
@@ -88,7 +88,8 @@ export default function Speakers() {
               {/* Image Section */}
               <div className="relative w-full aspect-square overflow-hidden bg-gradient-to-br from-purple-500/20 to-blue-500/20">
                 <Image
-                  src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${speaker.name}`}
+                  // src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${speaker.name}`}
+                  src="https://plus.unsplash.com/premium_photo-1682855223699-edb85ffa57b3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt={speaker.name}
                   fill
                   className="object-cover rounded-t-2xl"
