@@ -8,55 +8,63 @@ const speakers = [
     name: 'FHOP MUSIC',
     role: 'Ministério de Adoração',
     category: 'music',
-    tags: ['MÚSICA', 'ADORAÇÃO']
+    tags: ['MÚSICA', 'ADORAÇÃO'],
+    image: "/images/speakers/fhop-music.jpg"
   },
   {
     name: 'Pr. Nivaldo Nassiff',
     role: 'Preletor',
     category: 'speaker',
-    tags: ['PALESTRA', 'MINISTRAÇÃO']
+    tags: ['PALESTRA', 'MINISTRAÇÃO'],
+    image: "/images/speakers/nivaldo-nassiff.jpg"
   },
   {
     name: 'Armando Filho',
     role: 'Cantor',
     category: 'music',
-    tags: ['MÚSICA', 'CANTOR']
+    tags: ['MÚSICA', 'CANTOR'],
+    image: "/images/speakers/armando-filho.jpg"
   },
   {
     name: 'Davi Silva',
     role: 'Adorador',
     category: 'music',
-    tags: ['MÚSICA', 'ADORAÇÃO']
+    tags: ['MÚSICA', 'ADORAÇÃO'],
+    image: "/images/speakers/davi-silva.jpg"
   },
   {
     name: 'Mateus Brito',
-    role: 'Pastor e Cantor Gospel',
+    role: 'Pastor e Cantor',
     category: 'speaker',
-    tags: ['PALESTRA', 'MÚSICA']
+    tags: ['PALESTRA', 'MÚSICA'],
+    image: "/images/speakers/mateus-brito.jpg"
   },
   {
     name: 'DJ Drinão',
     role: 'DJ Gospel Animador',
     category: 'music',
-    tags: ['MÚSICA', 'DJ']
+    tags: ['MÚSICA', 'DJ'],
+    image: "/images/speakers/dj-irinao.jpg"
   },
   {
-    name: 'Erick Mathias',
-    role: 'One Sounds',
+    name: 'One Sounds',
+    role: 'Ministério de Adoração',
     category: 'music',
-    tags: ['MÚSICA', 'ADORAÇÃO']
+    tags: ['MÚSICA', 'ADORAÇÃO'],
+    image: "/images/speakers/one-sounds.jpg"
   },
   {
     name: 'Pr. Reuel Silva',
-    role: 'Líder de Louvor e Pastor - MEVAM',
+    role: 'Pastor e Cantor',
     category: 'speaker',
-    tags: ['PALESTRA', 'LOUVOR']
+    tags: ['PALESTRA', 'LOUVOR'],
+    image: "/images/speakers/reuel-silva.jpg"
   }
 ];
 
 export default function Speakers() {
   return (
-    <section className="relative py-24">
+    <section className="relative py-0 sm:py-12">
 
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
@@ -80,8 +88,8 @@ export default function Speakers() {
               {/* Image Section */}
               <div className="relative w-full aspect-square overflow-hidden bg-gradient-to-br from-purple-500/20 to-blue-500/20">
                 <Image
-                  // src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${speaker.name}`}
-                  src="https://plus.unsplash.com/premium_photo-1682855223699-edb85ffa57b3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  // src="https://plus.unsplash.com/premium_photo-1682855223699-edb85ffa57b3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src={speaker.image}
                   alt={speaker.name}
                   fill
                   className="object-cover rounded-t-2xl"
@@ -97,7 +105,7 @@ export default function Speakers() {
                 </h3>
 
                 {/* Confirmed Label */}
-                <p className="text-sm text-gray-400 font-normal">
+                <p className="bg-yellow-400 px-2 py-1 rounded-full w-fit text-sm text-black font-normal">
                   Presença Confirmada
                 </p>
 

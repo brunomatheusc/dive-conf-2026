@@ -44,7 +44,7 @@ export default function Hero() {
           </p>
 
           {/* Inscrições Section - Texto destacado */}
-          <div className="mb-16">
+          <div className="mb-8 sm:mb-16">
             <p className="text-4xl sm:text-5xl md:text-6xl font-bold text-white/90 mb-3 tracking-tight">
               INSCRIÇÕES
             </p>
