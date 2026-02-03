@@ -15,15 +15,23 @@ export default function Navbar() {
       <div className="border-b border-white/10">
         <div className="container mx-auto p-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
-            <p className="text-sm text-white/80">
+            <p className="hidden sm:block text-sm text-white/80">
               13-16 de Fevereiro de 2026 / Paranapanema, SP
             </p>
-            <Link
-              href="#sobre"
-              className="text-sm text-white/80 hover:text-white transition-colors"
-            >
-              SOBRE
-            </Link>
+            <div className="flex items-center gap-4">
+              <Link
+                href="#convidados"
+                className="text-sm text-white/80 hover:text-white transition-colors"
+              >
+                NOSSOS CONVIDADOS
+              </Link>
+              <Link
+                href="#cronograma"
+                className="text-sm text-white/80 hover:text-white transition-colors"
+              >
+                CRONOGRAMA
+              </Link>
+            </div>
           </div>
         </div>
       </div>

@@ -64,7 +64,7 @@ const speakers = [
 
 export default function Speakers() {
   return (
-    <section className="relative py-0 sm:py-12">
+    <section id="convidados" className="relative py-0 sm:py-12">
 
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">

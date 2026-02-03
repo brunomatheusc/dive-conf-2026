@@ -1,7 +1,9 @@
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import Speakers from '@/components/Speakers'
+import Schedule from '@/components/Schedule'
 import Footer from '@/components/Footer'
+import ScrollToTop from '@/components/ScrollToTop'
 
 export default function Home() {
   return (
@@ -20,8 +22,11 @@ export default function Home() {
         <Navbar />
         <Hero />
         <Speakers />
+        <Schedule />
         <Footer />
       </div>
+
+      <ScrollToTop />
     </main>
   )
 }
