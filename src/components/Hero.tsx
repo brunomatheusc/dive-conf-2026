@@ -68,7 +68,7 @@ export default function Hero() {
               INSCRIÇÕES
             </p>
             <p className="text-6xl sm:text-7xl md:text-8xl font-black text-yellow-400 tracking-tight">
-              R$ 30
+              R$ 40
             </p>
           </div>
 
